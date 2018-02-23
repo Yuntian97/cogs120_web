@@ -1,30 +1,24 @@
 
 var fs = require('fs');
-var thisID;
-var thisTitle;
-var thisContent;
-var obj;
+
 
 exports.creat1page = function(req, res) {
     res.render('creat1');
 };
 
-// what should we do when we press next
-function nextClick () {
+exports.addtocache = function(req, res) {
+    //console.log("Reach the server side!");
     var ObjectId = JSON.parse(fs.readFileSync('../getid.json').toString());
-    console.log(ObjectId);
-    thisID = ObjectId.nextId;
+    var writeID = ObjectId.nextId;
+    //console.log("Let me see the req:" + req);
     
-	thisTitle = document.getElementById('titleBar').value;
-	thisContent = $('.Textbox #goodBox').val();
+    var writeTitle = req.title;
+    var writeContent = req.content;
     
-	console.log("This id is:" + thisId);
-	console.log("This id is:" + thisTitle);
-	console.log("This id is:" + thisContent);
+	//console.log("This id is:" + writeID);
+	//console.log("This Title is:" + writeTitle);
+	//console.log("This id is:" + writeContent);
     
-    var towrite = {"id": thisID, "title": thisTitle, "summary": thisContent};
+    var towrite = {"id": writeID, "title": writeTitle, "summary": writeContent};
     fs.writeFile('../cache.json', JSON.stringify(towrite));
-    
-    console.log("Write to cache, yes!");
-    window.location.href = "/creat2";
-}
+};
