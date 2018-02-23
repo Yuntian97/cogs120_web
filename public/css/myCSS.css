@@ -1,0 +1,58 @@
+/* applies to anything of class "example-class-selector" */
+div{
+    margin:15px;
+}
+
+.qbutton {
+    width:55px;
+    height:55px;
+	padding-top: 5px;
+}
+
+html,
+.container{
+    background: #f7f7f7 url(https://css-tricks.com/examples/RoundButtons/images/bg.png) repeat center top;
+}
+
+.title_area2 p{
+    text-align: center;
+}
+
+.logo_area{
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:240px;
+    height:160px;
+}
+
+.logo_area p{
+    text-align: center;
+}
+
+.functionText{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.logoutText{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.pageEnd {
+    display: inline;
+}
+
+.allwehave{
+    display: inline;
+}
+
+.Newtop{
+    display : inline;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #8382BF;
+}
