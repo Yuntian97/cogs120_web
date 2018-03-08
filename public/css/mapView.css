@@ -1,0 +1,52 @@
+html,
+.container{
+    background: #f7f7f7 url(https://css-tricks.com/examples/RoundButtons/images/bg.png) repeat center top;
+}
+
+#map {
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+h4{
+	color: #8382BF;
+}
+
+h4{
+	color: #8382BF;
+}
+
+p{
+    padding-top: 5px;
+}
+
+.progress{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 7px;
+}
+
+.progress-bar{
+   width: 200px;
+   height: 7px;
+}
+
+textarea {
+   resize: none;
+}
+
+.backback{
+    padding-top: 5px;
+}
+
+.pageEnd {
+    display: inline;
+}
+
+.Newtop{
+    display : inline;
+}

@@ -1,0 +1,25 @@
+{
+	"notelib": [
+		{
+			"title": "Waiting in Line",
+            "content": "Some test note 1",
+            "lat": 32.878,
+            "lng": -117.234,
+            "sharing": "Test Friend 2"
+		},
+		{
+			"title": "Needfinding",
+            "content": "Some test note 2",
+            "lat": 32.84,
+            "lng": -117.234,
+            "sharing": "Test Friend 5"
+		},
+		{
+			"title": "Prototyping",
+            "content": "Some test note 3",
+            "lat": 32.878,
+            "lng": -117.25,
+            "sharing": "Test Friend 6"
+		}
+	]
+}

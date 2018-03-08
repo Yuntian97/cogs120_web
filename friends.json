@@ -1,0 +1,34 @@
+{
+	"friends": [
+		{
+			"name": "Test Friend 1",
+			"description": "Has awesome pet mice",
+			"imageURL": "/images/t1.png"			
+		},
+		{
+			"name": "Test Friend 2",
+			"description": "Great at sketching",
+			"imageURL": "/images/t2.png"		
+		},
+		{
+			"name": "Test Friend 3",
+			"description": "Loves Trukese navigators",
+			"imageURL": "/images/t3.png"	
+		},
+		{
+			"name": "Test Friend 4",
+			"description": "Has stellar associative memory",
+			"imageURL": "/images/t4.png"
+		},
+		{
+			"name": "Test Friend 5",
+			"description": "Only friend with a Navy ship named after them",
+			"imageURL": "/images/t5.png"
+		},
+		{
+			"name": "Test Friend 6",
+			"description": "Really into psychology",
+			"imageURL": "/images/t6.png"
+		}
+	]
+}
