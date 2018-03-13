@@ -25,7 +25,6 @@ h4{
 .FriendList{
     padding-top: 10px;
     display: block;
-    height: 480px;
     background: background: #f7f7f7 url(https://css-tricks.com/examples/RoundButtons/images/bg.png) repeat center top;
 }
 
@@ -83,7 +82,7 @@ textarea {
   text-align: center;
   font-size: 12px;
   padding: 20px;
-  width: 100px;
+  width: 90px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;

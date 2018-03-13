@@ -4,6 +4,7 @@ var flag = true;
 var Init;
 var markerPos;
 var getPosObj;
+var infoWindow;
 
 // Call this function when the page loads (the "ready" event)
 /* $(document).ready(function () {
@@ -18,6 +19,20 @@ function initializePage() {
 
 function nextClick(e) {
 	e.preventDefault();
+    
+    if (marker == undefined){
+        marker = new google.maps.Marker({
+            position: Init,
+			map: map,
+			draggable: true,
+			title: "Drag Me To Your Location"
+        });
+        
+        infoWindow.setPosition(Init);
+        infoWindow.setContent('Location, drag Marker To Your Location');
+        infoWindow.open(map);
+        map.setCenter(Init);
+    }
     
     getPosObj = marker.getPosition();
     var thisLat = getPosObj.lat();
@@ -39,24 +54,25 @@ function initMap() {
 			zoom: 14,
 			center: Init
 		});
-
-	infoWindow = new google.maps.InfoWindow;
-
+        
+    infoWindow = new google.maps.InfoWindow;
+    
 	// Try HTML5 geolocation.
 	if (navigator.geolocation) {
+        console.log("Get Location!");
 		navigator.geolocation.getCurrentPosition(function (position) {
 			var pos = {
 				lat: position.coords.latitude,
 				lng: position.coords.longitude
 			};
-
+            console.log("Get Marker!");
 			marker = new google.maps.Marker({
 				position: pos,
 				map: map,
 				draggable: true,
 				title: "Drag Me To Your Location"
 			});
-
+            //console.log(pos);
 			infoWindow.setPosition(pos);
 			infoWindow.setContent('Current Location, drag Marker To Your Location');
 			infoWindow.open(map);

@@ -6,7 +6,6 @@ $(document).ready(function () {
 
 // Function that is called when the document is ready.
 function initializePage() {
-    $('.pageEnd #3').click(likeClick);
 	console.log("Javascript connected!");
 	$('.thisName').click(nameClick);
     
@@ -21,14 +20,6 @@ function nameClick(e) {
 	console.log("This shareName is:" + title);
     
     $.post("/getMapView", {"title":title}, callbackFn);
-}
-
-function likeClick(e){
-    e.preventDefault();
-    
-	console.log("Like! click");
-    
-    ga("send", "event", "like", "click");
 }
 
 function callbackFn(res) {

@@ -18,7 +18,6 @@ function initializePage() {
 	console.log("Javascript connected!");
     
     $.get("/getAllObject", getMOFn);
-    $('.pageEnd #3').click(likeClick);
 };
 
 function initMap() {
@@ -60,11 +59,3 @@ function getMOFn(res){
         infoWindow.open(map);
     });
 };
-
-function likeClick(e){
-    e.preventDefault();
-    
-	console.log("Like! click");
-    
-    ga("send", "event", "like", "click");
-}
