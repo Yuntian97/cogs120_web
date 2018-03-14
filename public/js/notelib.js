@@ -10,6 +10,7 @@ var markerArray = [];
 var infoArray = [];
 
 function initMap() {
+    //alert("ok");
 	Init = {
 		lat: 32.878,
 		lng: -117.234
